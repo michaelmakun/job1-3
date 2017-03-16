@@ -1,12 +1,6 @@
 <div style="margin: 0 auto; width:40%">
   <h2 class="text-center">编缉职位</h2>
 
-  <%= simple_form_for [:admin,@job] do |f| %>
-
-    <%= f.input :title %>
-    <%= f.input :description %>
-
-    <%= f.submit "Submit" %>
-  <% end %>
+  <%= render "job_item" %>
 
 </div>
