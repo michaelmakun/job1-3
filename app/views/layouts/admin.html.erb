@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JobListing</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="contaner">
+      <div class="row">
+        <%= render "common/navbar" %>
+      </div>
+        <%= render "common/flashes" %>
+        <div class="col-md-2">
+            <%= link_to("Jobs", admin_jobs_path, :class => "btn btn-info", :style => "width: 80%" ) %>
+        </div>
+        <div class="col-md-10">
+          <%= yield %>
+        </div>
+
+    </div>
+      <%= render "common/footer" %>
+  </body>
+</html>
