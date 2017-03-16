@@ -1,0 +1,14 @@
+<div style="margin:0 auto; width:40%">
+
+  <h3 class="text-center">编缉职位</h3>
+
+
+  <%= simple_form_for @job do |f| %>
+
+  <%= f.input :title %>
+  <%= f.input :description %>
+
+  <%= f.submit "Submit" %>
+
+  <% end %>
+</div>
