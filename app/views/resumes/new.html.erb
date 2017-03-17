@@ -1,0 +1,13 @@
+<div style="margin: 0 auto; width:60%">
+<h3 class="text-center">投递简历到<%= @job.title %></h3>
+
+<hr>
+
+<%= simple_form_for [@job,@resume] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :attachment %>
+
+  <%= f.submit "送出" %>
+<% end %>
+
+</div>
